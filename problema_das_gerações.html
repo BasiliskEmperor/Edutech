@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function mostra(frase) {
+
+		document.write("<h1>" + frase + "</h1>");
+		pulaL();
+	}
+
+	function pulaL() {
+
+		document.write(puloLinha)
+
+	}
+
+	var puloLinha = "<br><br>";
+	var anoA = 2021;
+	var epocaA = 1500;
+	var diferençaA = ((anoA - epocaA)/28)
+
+	mostra("Desde daquela epoca foram " + Math.round(diferençaA) + " gerações aproximandamente");
+
+</script>

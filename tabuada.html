@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pularL() {
+
+    	document.write("<br>");   
+
+	}
+
+	function pularLL() {
+
+		document.write("<br><hr><hr><hr><br>");
+
+	}
+
+	function mostra(argumento) {
+		// argumento = parametrô dado para a função
+		document.write("<h2>" + argumento + "</h2>")
+		pularL();
+	}
+
+	for(var multi = 1; multi <= 10; multi++) {
+
+		pularLL();
+		mostra(7 * multi);
+		pularLL()
+
+	}
+
+	mostra("FIM");
+	pularLL();
+
+</script>

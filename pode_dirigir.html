@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularL() {
+
+        document.write("<br>");   
+
+    }
+
+    function pularLL() {
+
+        document.write("<br><hr><hr><hr><br>");
+
+    }
+
+    function mostra(argumento) {
+        // argumento = parametrô dado para a função
+        document.write("<h2>" + argumento + "</h2>")
+        pularL();
+    }
+    //parseFloat() = decimais
+    //parseInt() = inteiros
+    var idade = parseInt(prompt("Qual é sua idade"));
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+    if( idade >= 18 && temCarteira == "S") {
+        mostra("Pode dirigir");
+    } else {
+        mostra("Não pode dirigir");
+    }
+
+    for(var linha = 1; linha <= 3; linha++) {
+
+        for(var coluna = 1; coluna <= 10; coluna++) {
+
+            document.write("*");
+            pularL();
+        }
+    }
+</script>

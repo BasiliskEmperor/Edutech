@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pularL() {
+
+    	document.write("<br>");   
+
+	}
+
+	function pularLL() {
+
+		document.write("<br><hr><hr><hr><br>");
+
+	}
+
+	function mostra(argumento) {
+		// argumento = parametrô dado para a função
+		document.write("<h2>" + argumento + "</h2>")
+		pularL();
+	}
+
+	var nome = prompt("Entre seu nome")
+
+	var pas = parseInt(prompt(nome + " Entre com os pontos do ano passado"));
+	var vit = parseInt(prompt(nome + " Entre com o número de vitorias"));
+	var emp = parseInt(prompt(nome + " Entre com o número de empates"));
+
+	var pts = (vit * 3) + emp;
+
+	pularLL();
+    mostra(nome + " Os pontos do seu time é " + pts);
+    pularLL();
+
+    if(pts > pas) {
+
+    	mostra("Seu time esta melhor do que ano passado.");
+    	pularLL();
+    }
+
+    if(pts < pas) {
+
+    	mostra("Seu time esta pior do que ano passado");
+    	pularLL();
+    }
+
+    if(pts == pas) {
+
+    	mostra("Seu time esta igual ao ano passado");
+    	pularLL();
+    }
+
+    
+
+</script>

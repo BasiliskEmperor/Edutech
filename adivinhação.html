@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pularL() {
+
+    	document.write("<br>");   
+
+	}
+
+	function pularLL() {
+
+		document.write("<br><hr><hr><hr><br>");
+
+	}
+
+	function mostra(argumento) {
+		// argumento = parametrô dado para a função
+		document.write("<h2>" + argumento + "</h2>")
+		pularL();
+	}
+
+	function sortear(n) {
+
+		return Math.round(Math.random() * n);
+	}
+
+	var numeroPensado = sortear(10);
+	console.log(numeroPensado);
+	var tries = 1;
+
+	while(tries <= 3) {
+
+		var chute = parseInt(prompt("Faça seu chute!"));
+
+		if(chute == numeroPensado) {
+			pularLL();
+			mostra("Você ACERTOU!, o numero pensado era " + numeroPensado);
+			pularLL();
+			break;
+		} else {
+			pularLL();
+			mostra("Você ERROU!");
+			pularLL();
+		}
+
+		tries++;
+}
+
+	pularLL();
+
+	mostra("FIM");
+
+	pularLL();
+
+</script>

@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pularL() {
+
+    	document.write("<br>");   
+
+	}
+
+	function pularLL() {
+
+		document.write("<br><hr><hr><hr><br>");
+
+	}
+
+	function mostra(argumento) {
+		// argumento = parametrô dado para a função
+		document.write("<h2>" + argumento + "</h2>")
+		pularL();
+	}
+
+	var limite = parseInt(prompt("Entre com a data limite"));
+
+	var anoC = 1930;
+
+	pularLL();
+
+	while(anoC <= limite) {
+	mostra("Teve copa em " + anoC);
+	anoC = anoC + 4;
+	pularLL();
+}
+
+	mostra("FIM");
+	pularLL();
+
+</script>

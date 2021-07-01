@@ -1,0 +1,68 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pularL() {
+
+    	document.write("<br>");   
+
+	}
+
+	function pularLL() {
+
+		document.write("<br><hr><hr><hr><br>");
+
+	}
+
+	function mostra(argumento) {
+		// argumento = parametrô dado para a função
+		document.write("<h2>" + argumento + "</h2>")
+		pularL();
+	}
+
+	function mortraB(frase) {
+		// argumento = parametrô dado para a função
+		pularLL();
+		document.write("<h2>" + frase + "</h2>")
+		pularLL();
+	}
+
+	function calcularImc(peso, altura) {
+
+		var imc = peso / (altura * altura);
+		return imc;
+	}
+
+	function calcular(x, y) {
+
+		var resultadoR = x + y;
+		return resultadoR
+
+	}
+
+	var nome = prompt("Informe seu nome");
+	var alturaI = prompt(nome + " Informe sua altura");
+	var pesoI = prompt(nome + " informe seu peso");
+
+	var imc = calcularImc(pesoI, alturaI);
+
+	mortraB(nome + ", o seu IMC calculado é " + imc)
+
+	if(imc < 18.5) {
+
+		mostra("Você está abaixo do recomendado");
+		pularLL();
+	}
+
+	if(imc > 35) {
+
+		mostra("Você está acima do recomendado");
+		pularLL();
+	}
+
+	if(imc >= 18.5 && <= 35) {
+
+		mostra("Seu IMC está excelente!");
+		pularLL();
+	}
+</script>

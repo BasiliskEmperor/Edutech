@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pularL() {
+
+    	document.write("<br>");   
+
+	}
+
+	function pularLL() {
+
+		document.write(puloLinha)
+
+	}
+
+	function mostra(argumento) {
+		// argumento = parametrô dado para a função
+		document.write(argumento)
+		pularL();
+	}
+
+	function somar(x, y) {
+
+		var somarR = x + y;
+		mostra("O resultado é " + somarR)
+		return somarR;
+
+	}
+
+	function subtrair(x, y) {
+
+		var subtrairR = x - y;
+		mostra("O resultado é " + subtrairR)
+		return subtrairR;
+	}
+
+	function multiplicar(x, y) {
+
+		var multiplicarR = x * y;
+		mostra("O resultado é " + multiplicarR)
+		return multiplicarR;
+	}
+
+	function dividir(x, y) {
+
+		var dividirR = x / y;
+		mostra("O resultado é " + dividirR)
+		return dividirR;
+	}
+
+	var a = somar(10, 20)
+	var b = dividir(30, 2)
+
+	var c = a + b;
+	mostra("O resultado é " + c);
+
+</script>
